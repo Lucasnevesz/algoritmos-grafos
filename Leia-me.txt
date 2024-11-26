@@ -1,0 +1,74 @@
+==================================================================
+                   PROJETO DE ALGORITMOS DE GRAFOS
+                             Desafio 2
+==================================================================
+
+Este projeto implementa algoritmos clássicos de grafos para resolver
+um desafio acadêmico. Ele abrange os seguintes algoritmos:
+
+1. Caminho Mínimo (Dijkstra): Calcula o caminho mais curto entre 
+   um vértice e todos os outros vértices do grafo.
+
+2. Árvore Geradora Mínima (Prim e Kruskal): Calcula a árvore geradora 
+   mínima utilizando dois algoritmos diferentes.
+
+3. Fluxo Máximo (Edmonds-Karp): Determina o fluxo máximo entre dois 
+   vértices em um grafo.
+
+Além disso, os resultados são exibidos no console e exportados para uma 
+planilha Excel, facilitando a visualização dos dados.
+
+==================================================================
+                         FUNCIONALIDADES
+==================================================================
+
+- Leitura de Grafo: O programa lê um arquivo de texto que contém 
+  a definição de um grafo no formato específico (com vértices e arestas).
+  
+- Algoritmos Implementados:
+  - Dijkstra: Algoritmo de caminho mínimo para encontrar o custo
+    mínimo entre um vértice e todos os outros.
+  - Prim e Kruskal: Algoritmos para calcular a Árvore Geradora Mínima.
+  - Edmonds-Karp: Algoritmo de fluxo máximo para calcular o fluxo
+    máximo entre a fonte e o destino.
+
+- Saída de Resultados: O programa exibe no console e exporta os 
+  resultados para uma planilha Excel (resultados.xlsx) contendo:
+  - O número de vértices e arestas do grafo.
+  - O custo e o tempo de execução de cada algoritmo (Dijkstra, Kruskal, Prim e Edmonds-Karp).
+
+==================================================================
+                          COMO RODAR O PROJETO
+==================================================================
+
+1. Requisitos:
+   - Java 11 ou superior.
+   - Biblioteca Apache POI (para exportar os resultados para Excel).
+
+2. Passos:
+   - Clone ou baixe este repositório.
+   - Coloque o arquivo de entrada do grafo (ex: USA-road-d.COL.txt) na pasta "src/".
+   - Escreva o nome do arquivo de entrada na classe Main.java (ex: String arquivo = "src/USA-road-d.NY.txt").
+   - Compile e execute o programa.
+
+3. Execução:
+   - O programa irá ler o arquivo de entrada, executar os algoritmos e 
+     gerar os resultados.
+   - No final, o programa exibirá no console a tabela de resultados e 
+     gerará uma planilha Excel com os dados.
+
+
+==================================================================
+                         ESTRUTURA DO PROJETO
+==================================================================
+
+- Main.java: Classe principal que executa os algoritmos e gera os 
+  resultados.
+- Grafo.java: Implementação do grafo, incluindo vértices e arestas.
+- Dijkstra.java: Implementação do algoritmo de Dijkstra para caminho mínimo.
+- Kruskal.java: Implementação do algoritmo de Kruskal para árvore geradora mínima.
+- Prim.java: Implementação do algoritmo de Prim para árvore geradora mínima.
+- FluxoMaximo.java: Implementação do algoritmo de Edmonds-Karp para fluxo máximo.
+- CarregaGrafos.java: Implementação da geração de grafos a partir do arquivo de entrada.
+
+
